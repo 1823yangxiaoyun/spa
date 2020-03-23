@@ -1,0 +1,27 @@
+form{
+  width:380px;
+  margin:50px auto;
+  font-size:1.1em
+
+}
+#calculate{
+  width:70px;
+  margin-left:62px;
+}
+input,label,span{
+  margin:5px 0;
+  padding-left:5px;
+  font-size:1em;
+}
+
+input:invalid+span:after {
+      content: '✖';
+          color: red
+
+}
+
+input:valid+span:after {
+      content: '✓';
+          color: green
+
+}
