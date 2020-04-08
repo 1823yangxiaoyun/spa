@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>goto dialog 测试页面</title>
+ <link rel='stylesheet' href='./dlg-goto.css' >
+</head>
+<body>
+<input type='button' id='popup' value='弹出对话框'>
+<div id='main'></div>
+    <script src='//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
+    <script src='./dlg-goto.js'></script> 
+    <script>
+$(function(){
+     // $timebyrButton.show('#main');
+
+    var $btnDlg=$('#popup');
+        
+   
+        $btnDlg.click(function(){
+        $dlgGoto.show({
+          num:5,
+          title:'222',
+          onClick:function(){
+          alert('sss');
+          }
+          })
+        }) 
+    
+    })
+    </script>
+</body>
+</html>
